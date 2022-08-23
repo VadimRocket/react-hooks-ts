@@ -4,7 +4,7 @@ import Application from './components/Application';
 import { inDev } from './utils/helpers';
 
 // Application to Render
-const app = <Application title='Init app' />;
+const app = <Application title='react hooks' />;
 
 // Render application in DOM
 ReactDOM.render(app, document.getElementById('app'));
