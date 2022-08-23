@@ -5,7 +5,7 @@
 ## Hooks:
 
 - ⚛️  useCookie
-- ⚛️  
+- ⚛️  useDebounce
 - ⚛️  
 - ⚛️  
 - ⚛️  
