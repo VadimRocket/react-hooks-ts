@@ -1,5 +1,6 @@
 import React from 'react'
 import { useDebounce } from "../../hooks/useDebounce";
+import { Heading } from '../ui/Heading';
 
 const Debounce = () => {
 
@@ -13,6 +14,7 @@ const Debounce = () => {
 
     return (
         <div className='mt-1'>
+            <Heading level="h2">useDebounce example</Heading>
             <input value={value} onChange={handleChange} />
             <br />
             <p>Current value: {value}</p>
