@@ -3,6 +3,7 @@ import Layout from '../../layout/Layout'
 import Cookies from '@src/components/examples/Cookies'
 import Debounce from '@src/components/examples/Debounce'
 import DidMountEffect from '@src/components/examples/DidMountEffect'
+import Toggle from '@src/components/examples/Toggle'
 
 const Home = () => {
   return (
@@ -10,6 +11,7 @@ const Home = () => {
        <Cookies />
        <Debounce />
        <DidMountEffect />
+       <Toggle />
     </Layout>
   )
 }
