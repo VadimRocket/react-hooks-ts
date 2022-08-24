@@ -9,7 +9,7 @@
 - ⚛️  useDidMountEffect
 - ⚛️  useToggle
 - ⚛️  useFetch
-- ⚛️  
+- ⚛️  useFocus
 
 <br />
 
