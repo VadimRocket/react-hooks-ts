@@ -10,7 +10,8 @@ const DidMountEffect = () => {
         alert("useDidMountEffect worked only when props changed.");
     }, [value]);
 
-    const handleClick = () => {
+    const handleClick = (event: React.MouseEvent<HTMLButtonElement>) => {
+        event.preventDefault();
         setValue(prev => prev + 1)
     }
 
