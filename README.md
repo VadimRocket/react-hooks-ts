@@ -8,7 +8,7 @@
 - ⚛️  useDebounce
 - ⚛️  useDidMountEffect
 - ⚛️  useToggle
-- ⚛️  
+- ⚛️  useFetch
 - ⚛️  
 
 <br />
