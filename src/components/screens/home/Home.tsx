@@ -8,6 +8,7 @@ import FetchPost from '@src/components/examples/FetchPost'
 import InputFocus from '@src/components/examples/InputFocus'
 import WindowSize from '@src/components/examples/WindowSize'
 import LocalStorage from '@src/components/examples/LocalStorage'
+import Outside from '@src/components/examples/Outside'
 
 const Home = () => {
   return (
@@ -20,6 +21,7 @@ const Home = () => {
        <InputFocus />
        <WindowSize />
        <LocalStorage />
+       <Outside />
     </Layout>
   )
 }
