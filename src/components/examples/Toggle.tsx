@@ -3,7 +3,7 @@ import { useToggle } from '@src/hooks/useToggle';
 import { Button } from '../ui/button/Button';
 import { Heading } from '../ui/Heading';
 
-const Toggle = () => {
+const Toggle:React.FC = () => {
     const [value, setValue] = useToggle(false);
 
     const handleClick = (event: React.MouseEvent<HTMLButtonElement>) => {

@@ -3,7 +3,7 @@ import { useDidMountEffect } from "../../hooks/useDidMountEffect";
 import { Button } from '../ui/button/Button';
 import { Heading } from '../ui/Heading';
 
-const DidMountEffect = () => {
+const DidMountEffect:React.FC = () => {
     const [value, setValue] = useState<number>(0);
 
     useDidMountEffect(() => {

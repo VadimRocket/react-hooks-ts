@@ -3,7 +3,7 @@ import { useCookie } from '../../hooks/useCookie';
 import { Heading } from '../ui/Heading';
 
 
-const Cookies = () => {
+const Cookies:React.FC = () => {
 
     const [value, updateCookie, deleteCookie] = useCookie("token", "")
 

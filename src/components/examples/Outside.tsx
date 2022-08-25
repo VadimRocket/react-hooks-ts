@@ -4,7 +4,7 @@ import { Heading } from '../ui/Heading'
 import { Button } from '../ui/button/Button'
 
 
-const Outside = () => {
+const Outside:React.FC = () => {
     const { ref, isShow, setIsShow } = useOutside(false)
 
     const handleClick = () => {

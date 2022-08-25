@@ -2,7 +2,7 @@ import React from 'react'
 import { useDebounce } from "../../hooks/useDebounce";
 import { Heading } from '../ui/Heading';
 
-const Debounce = () => {
+const Debounce:React.FC = () => {
 
     const [value, setValue] = React.useState<string>("");
     const delay = 1000;

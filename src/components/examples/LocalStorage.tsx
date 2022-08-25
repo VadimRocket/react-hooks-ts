@@ -16,7 +16,7 @@ const initState: Todo[] = [
     }
 ];
 
-const LocalStorage: React.FC = () => {
+const LocalStorage:React.FC = () => {
 
     const [todos, setTodos] = useLocalStorage('todos', initState);
     const handleClick = (event: React.MouseEvent<HTMLButtonElement>) => {

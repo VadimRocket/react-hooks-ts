@@ -2,7 +2,7 @@ import React from 'react'
 import { useFocus } from '../../hooks/useFocus';
 import { Heading } from '../ui/Heading';
 
-const InputFocus = () => {
+const InputFocus:React.FC = () => {
 
     const [inputRef, setInputFocus] = useFocus();
 

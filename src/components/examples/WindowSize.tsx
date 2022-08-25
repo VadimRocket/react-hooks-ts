@@ -2,7 +2,7 @@ import React from 'react';
 import { useWindowSize } from '@src/hooks/useWindowSize';
 import { Heading } from '../ui/Heading';
 
-const WindowSize = () => {
+const WindowSize:React.FC = () => {
     const { width, height } = useWindowSize();
 
     return (
