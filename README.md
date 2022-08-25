@@ -10,6 +10,7 @@
 - ⚛️  useToggle
 - ⚛️  useFetch
 - ⚛️  useFocus
+- ⚛️  useWindowSize
 
 <br />
 
