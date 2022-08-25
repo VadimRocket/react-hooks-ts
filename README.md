@@ -12,6 +12,7 @@
 - ⚛️  useFocus
 - ⚛️  useWindowSize
 - ⚛️  useLocalStorage
+- ⚛️  useOutside
 
 <br />
 
