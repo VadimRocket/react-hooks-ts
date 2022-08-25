@@ -7,6 +7,7 @@ import Toggle from '@src/components/examples/Toggle'
 import FetchPost from '@src/components/examples/FetchPost'
 import InputFocus from '@src/components/examples/InputFocus'
 import WindowSize from '@src/components/examples/WindowSize'
+import LocalStorage from '@src/components/examples/LocalStorage'
 
 const Home = () => {
   return (
@@ -18,6 +19,7 @@ const Home = () => {
        <FetchPost />
        <InputFocus />
        <WindowSize />
+       <LocalStorage />
     </Layout>
   )
 }

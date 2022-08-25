@@ -11,6 +11,7 @@
 - ⚛️  useFetch
 - ⚛️  useFocus
 - ⚛️  useWindowSize
+- ⚛️  useLocalStorage
 
 <br />
 
