@@ -13,7 +13,7 @@ const InputFocus:React.FC = () => {
     return (
         <div>
             <Heading level='h2'>useFocus example</Heading>
-            <input ref={inputRef} type='text' />
+            <input className='input' ref={inputRef} type='text' placeholder='typing....' />
         </div>
     )
 }
