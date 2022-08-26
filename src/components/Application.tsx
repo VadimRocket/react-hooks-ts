@@ -14,7 +14,7 @@ const Application: React.FC<Props> = (props) => {
 
   return (
     <React.Fragment>
-      <main className='container'>
+      <main>
         <div className='main-heading'>
           <img src={logo} width='32' title='logo' />
           <h1>{props.title}</h1>
