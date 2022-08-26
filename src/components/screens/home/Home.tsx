@@ -9,6 +9,7 @@ import InputFocus from '@src/components/examples/InputFocus'
 import WindowSize from '@src/components/examples/WindowSize'
 import LocalStorage from '@src/components/examples/LocalStorage'
 import Outside from '@src/components/examples/Outside'
+import Escape from '@src/components/examples/Escape'
 
 const Home = () => {
   return (
@@ -22,6 +23,7 @@ const Home = () => {
        <WindowSize />
        <LocalStorage />
        <Outside />
+       <Escape />
     </Layout>
   )
 }
