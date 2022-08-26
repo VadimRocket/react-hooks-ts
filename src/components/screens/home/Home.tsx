@@ -9,8 +9,11 @@ import InputFocus from '@src/components/examples/InputFocus'
 import WindowSize from '@src/components/examples/WindowSize'
 import LocalStorage from '@src/components/examples/LocalStorage'
 import Outside from '@src/components/examples/Outside'
+import Escape from '@src/components/examples/Escape'
+import ThemeBgSwitcher from '@src/components/examples/BgColorTheme/ThemeBgSwitcher'
 
-const Home = () => {
+const Home: React.FC= () => {
+
   return (
     <Layout title="Home">
        <Cookies />
@@ -22,6 +25,8 @@ const Home = () => {
        <WindowSize />
        <LocalStorage />
        <Outside />
+       <Escape />
+       <ThemeBgSwitcher />
     </Layout>
   )
 }

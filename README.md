@@ -14,6 +14,7 @@
 - ⚛️  useLocalStorage
 - ⚛️  useOutside
 - ⚛️  useTheme
+- ⚛️  useEscape
 
 <br />
 
