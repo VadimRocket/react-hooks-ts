@@ -7,9 +7,9 @@ interface ILayoutProps {
 
 const Layout: FC<ILayoutProps> = ({ children, title }) => {
     return (
-        <div>
+        <>
             {children}
-        </div>
+        </>
     )
 }
 
