@@ -13,6 +13,7 @@
 - ⚛️  useWindowSize
 - ⚛️  useLocalStorage
 - ⚛️  useOutside
+- ⚛️  useEscape
 
 <br />
 
