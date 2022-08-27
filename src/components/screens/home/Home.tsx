@@ -21,7 +21,7 @@ const Home: React.FC= () => {
     { title: "useDebounce", content: <Debounce />},
     { title: "useDidMountEffect", content: <DidMountEffect />},
     { title: "useToggle", content: <Toggle />},
-    { title: "useFetc", content: <FetchPost />},
+    { title: "useFetch", content: <FetchPost />},
     { title: "useFocus", content: <InputFocus />},
     { title: "useWindowSize", content: <WindowSize />},
     { title: "useLocalStorage", content: <LocalStorage />},
