@@ -4,18 +4,18 @@
 
 ## Hooks:
 
-⚛️  useCookie
-⚛️  useDebounce
-⚛️  useDidMountEffect
-⚛️  useToggle
-⚛️  useFetch
-⚛️  useFocus
-⚛️  useWindowSize
-⚛️  useLocalStorage
-⚛️  useOutside
-⚛️  useTheme
-⚛️  useEscape
-⚛️  useInput
+- ⚛️  useCookie
+- ⚛️  useDebounce
+- ⚛️  useDidMountEffect
+- ⚛️  useToggle
+- ⚛️  useFetch
+- ⚛️  useFocus
+- ⚛️  useWindowSize
+- ⚛️  useLocalStorage
+- ⚛️  useOutside
+- ⚛️  useTheme
+- ⚛️  useEscape
+- ⚛️  useInput
 
 <br />
 
