@@ -12,21 +12,23 @@ import Outside from '@src/components/examples/Outside'
 import Escape from '@src/components/examples/Escape'
 import ThemeBgSwitcher from '@src/components/examples/BgColorTheme/ThemeBgSwitcher'
 import Accordion from '@src/components/ui/accordion/Accordion'
+import LoginForm from '@src/components/examples/forms/LoginForm'
 
 const Home: React.FC= () => {
 
   const [accordionData, _] =  useState([
-    { title: "Cookies", content: <Cookies />},
-    { title: "Debounce", content: <Debounce />},
-    { title: "DidMountEffect", content: <DidMountEffect />},
-    { title: "Toggle", content: <Toggle />},
-    { title: "FetchPost", content: <FetchPost />},
-    { title: "InputFocus", content: <InputFocus />},
-    { title: "WindowSize", content: <WindowSize />},
-    { title: "LocalStorage", content: <LocalStorage />},
-    { title: "Outside", content: <Outside />},
-    { title: "Escape", content: <Escape />},
-    { title: "ThemeBgSwitcher", content: <ThemeBgSwitcher />},
+    { title: "useCookie", content: <Cookies />},
+    { title: "useDebounce", content: <Debounce />},
+    { title: "useDidMountEffect", content: <DidMountEffect />},
+    { title: "useToggle", content: <Toggle />},
+    { title: "useFetc", content: <FetchPost />},
+    { title: "useFocus", content: <InputFocus />},
+    { title: "useWindowSize", content: <WindowSize />},
+    { title: "useLocalStorage", content: <LocalStorage />},
+    { title: "useOutside", content: <Outside />},
+    { title: "useEscape", content: <Escape />},
+    { title: "useTheme", content: <ThemeBgSwitcher />},
+    { title: "useInput", content: <LoginForm />},
   ]); 
 
   return (
