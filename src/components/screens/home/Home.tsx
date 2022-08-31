@@ -13,6 +13,7 @@ import Escape from '@src/components/examples/Escape'
 import ThemeBgSwitcher from '@src/components/examples/BgColorTheme/ThemeBgSwitcher'
 import Accordion from '@src/components/ui/accordion/Accordion'
 import LoginForm from '@src/components/examples/forms/LoginForm'
+import Geolocation from '@src/components/examples/geolocation/Geolocation'
 
 const Home: React.FC= () => {
 
@@ -29,6 +30,7 @@ const Home: React.FC= () => {
     { title: "useEscape", content: <Escape />},
     { title: "useTheme", content: <ThemeBgSwitcher />},
     { title: "useInput", content: <LoginForm />},
+    { title: "useGeolocation", content: <Geolocation />},
   ]); 
 
   return (
