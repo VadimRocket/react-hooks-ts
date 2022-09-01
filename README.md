@@ -16,6 +16,7 @@
 - ⚛️  useTheme
 - ⚛️  useEscape
 - ⚛️  useInput
+- ⚛️  useGeolocation
 
 <br />
 
