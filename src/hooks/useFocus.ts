@@ -1,16 +1,14 @@
 import { useRef } from 'react';
 
 export const useFocus = () => {
+  const htmlElRef = useRef<HTMLInputElement | null>(null);
 
-    const htmlElRef = useRef<HTMLInputElement | null>(null);
+  const setFocus = () => {
+    htmlElRef.current?.focus();
+  };
 
-    const setFocus = () => {
-        htmlElRef.current?.focus();
-    };
-
-    return [htmlElRef, setFocus] as const;
+  return [htmlElRef, setFocus] as const;
 };
-
 
 /*
 USAGE: 

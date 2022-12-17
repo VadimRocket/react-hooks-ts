@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 
-interface IPost {
-  userId: number,
+interface Post {
+  userId: number;
   id: number;
   title: string;
   body: string;
@@ -14,17 +14,15 @@ async function http<T>(request: string): Promise<T> {
   return body;
 }
 
-
 export const useFetch = (url: string) => {
-
-  const [data, setData] = useState<null | IPost>(null);
+  const [data, setData] = useState<Post>(null);
   const [isLoading, setIsLoading] = useState<boolean>(true);
   const [error, setError] = useState<string | unknown>('');
 
   const fetchPost = async () => {
-    const post = await http<IPost>(url);
+    const post = await http<Post>(url);
     setData(post);
-  }
+  };
 
   useEffect(() => {
     try {
@@ -35,5 +33,6 @@ export const useFetch = (url: string) => {
       setIsLoading(false);
     }
   }, [url]);
+
   return { data, isLoading, error };
 };

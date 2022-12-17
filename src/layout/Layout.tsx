@@ -1,7 +1,7 @@
 import React from 'react'
-interface ILayoutProps {
+interface LayoutProps {
     children: React.ReactNode;
     title?: string;
 }
 
-export const Layout: React.FC<ILayoutProps> = ({ children, title }) => <div title={title}>{children}</div>
+export const Layout: React.FC<LayoutProps> = ({ children, title }) => <div title={title}>{children}</div>
