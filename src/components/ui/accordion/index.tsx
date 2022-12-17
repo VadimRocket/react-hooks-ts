@@ -1,9 +1,13 @@
 import React, { useState } from 'react';
-import './Accordion.less';
 import { AccordionData } from './types';
 import { AccordionItem } from './AccordionItem';
 
-function Accordion({ items }: { items: Array<AccordionData> }) {
+import './Accordion.less';
+
+interface AccordionProps {
+  items: AccordionData[]
+}
+export const Accordion: React.FC<AccordionProps> = ({ items }) => {
 
   const [currentIdx, setCurrentIdx] = useState(-1);
   const btnOnClick = (idx: number) => {
@@ -11,17 +15,18 @@ function Accordion({ items }: { items: Array<AccordionData> }) {
   };
 
   return (
-    <ul className="accordion">
-      {items.map((item, idx) => (
-        <AccordionItem
-          key={idx}
-          data={item}
-          isOpen={idx === currentIdx}
-          btnOnClick={() => btnOnClick(idx)}
-        />
-      ))}
-    </ul>
+    <ul className="accordion" >
+      {
+        items.map((item, idx) => (
+          <AccordionItem
+            key={idx}
+            data={item}
+            isOpen={idx === currentIdx}
+            btnOnClick={() => btnOnClick(idx)}
+          />
+        ))
+      }
+    </ul >
   );
 }
 
-export default Accordion;

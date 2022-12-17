@@ -5,7 +5,5 @@ export interface ButtonProps extends React.DetailedHTMLProps<React.ButtonHTMLAtt
 export const Button: React.FC<ButtonProps> = props => {
     const { children, ...rest } = props;
 
-    return (
-        <button {...rest}>{children}</button>
-    )
+    return <button {...rest}>{children}</button>
 }
