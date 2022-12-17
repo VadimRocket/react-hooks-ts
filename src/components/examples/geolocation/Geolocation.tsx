@@ -5,7 +5,7 @@ import { Preloader } from '@src/components/ui/preloader/Preloader'
 
 
 const Geolocation = () => {
-    const { 
+    const {
         loading,
         error,
         geolocationCoordinates,
@@ -13,13 +13,13 @@ const Geolocation = () => {
 
     return (
         <>
-            <Heading level='h2'>useGeolocation example</Heading>
+            <Heading tag='h2'>useGeolocation example</Heading>
             {loading && <Preloader />}
-            <Heading level='p'>
+            <Heading tag='p'>
                 {
-                  error
-                    ? (<span>{error?.message}</span>)
-                    : (<span>latitude: {geolocationCoordinates?.latitude} &times; longitude: {geolocationCoordinates?.longitude} </span>)
+                    error
+                        ? (<span>{error?.message}</span>)
+                        : (<span>latitude: {geolocationCoordinates?.latitude} &times; longitude: {geolocationCoordinates?.longitude} </span>)
                 }
             </Heading>
         </>

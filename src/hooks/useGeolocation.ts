@@ -18,9 +18,9 @@ interface IGeolocationCoordinates {
 }
 
 export const useGeolocation = (positionOptions = options) => {
-  const [geolocationCoordinates, setGeolocationCoordinates] = useState<Partial<IGeolocationCoordinates>>(
-    {},
-  );
+  const [geolocationCoordinates, setGeolocationCoordinates] = useState<
+    Partial<IGeolocationCoordinates>
+  >({});
   const [loading, setLoading] = useState<boolean>(true);
   const [error, setError] = useState<GeolocationPositionError | null>(null);
 
@@ -63,9 +63,9 @@ const Geolocation = () => {
 
     return (
         <>
-            <Heading level="h2">useGeolocation example</Heading>
+            <Heading tag="h2">useGeolocation example</Heading>
             {loading && <Preloader />}
-            <Heading level="p">
+            <Heading tag="p">
                 {
                     error
                         ? (<span>{error?.message}</span>)

@@ -2,7 +2,7 @@ import React from 'react'
 import { useDebounce } from "../../hooks/useDebounce";
 import { Heading } from '../ui/Heading';
 
-const Debounce:React.FC = () => {
+const Debounce: React.FC = () => {
 
     const [value, setValue] = React.useState<string>("");
     const delay = 1000;
@@ -14,8 +14,8 @@ const Debounce:React.FC = () => {
 
     return (
         <div className='mt-1'>
-            <Heading level="h2">useDebounce example</Heading>
-            <input className='input' value={value} onChange={handleChange} placeholder='typing....'/>
+            <Heading tag="h2">useDebounce example</Heading>
+            <input className='input' value={value} onChange={handleChange} placeholder='typing....' />
             <br />
             <p>Current value: {value}</p>
             <p>Debounced value: {debouncedValue}</p>

@@ -7,14 +7,14 @@ const Escape: React.FC = () => {
 
     const [isToggle, setIsToggle] = useToggle(false);
 
-   const [escapeFn] = useEscape(setIsToggle);
-    
+    const [escapeFn] = useEscape(setIsToggle);
+
 
     return (
         <>
-            <Heading level='h2'>useEscape example</Heading>
-            <Heading level='p'>Try to click on the ESC button</Heading>
-            <Heading level='p'>Toggle state:  {JSON.stringify(isToggle)}</Heading>
+            <Heading tag='h2'>useEscape example</Heading>
+            <Heading tag='p'>Try to click on the ESC button</Heading>
+            <Heading tag='p'>Toggle state:  {JSON.stringify(isToggle)}</Heading>
             <div className={`block ${isToggle ? 'active' : ''}`}>Try to click on the ESC button</div>
         </>
     )

@@ -3,7 +3,7 @@ import { useDidMountEffect } from "../../hooks/useDidMountEffect";
 import { Button } from '../ui/button/Button';
 import { Heading } from '../ui/Heading';
 
-const DidMountEffect:React.FC = () => {
+const DidMountEffect: React.FC = () => {
     const [value, setValue] = useState<number>(0);
 
     useDidMountEffect(() => {
@@ -16,10 +16,10 @@ const DidMountEffect:React.FC = () => {
     }
 
     return (
-        <>  
-            <Heading level='h2'>useDidMountEffect example</Heading>
+        <>
+            <Heading tag='h2'>useDidMountEffect example</Heading>
             <Button onClick={handleClick}>Click to increase</Button>
-            <Heading level='p'>Value {value}</Heading>
+            <Heading tag='p'>Value {value}</Heading>
         </>
     )
 }
