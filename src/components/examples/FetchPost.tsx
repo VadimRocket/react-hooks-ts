@@ -1,8 +1,8 @@
 import React from 'react';
 import { useFetch } from '@src/hooks/useFetch';
-import { Heading } from '../ui/Heading';
+import { Heading } from '../ui';
 
-const FetchPost: React.FC = () => {
+export const FetchPost: React.FC = () => {
 
     const URL = 'https://jsonplaceholder.typicode.com/posts/1';
 
@@ -17,4 +17,3 @@ const FetchPost: React.FC = () => {
     );
 };
 
-export default FetchPost;

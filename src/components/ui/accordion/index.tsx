@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import './Accordion.less';
 import { AccordionData } from './types';
-import AccordionItem from './AccordionItem';
+import { AccordionItem } from './AccordionItem';
 
 function Accordion({ items }: { items: Array<AccordionData> }) {
-  
+
   const [currentIdx, setCurrentIdx] = useState(-1);
   const btnOnClick = (idx: number) => {
     setCurrentIdx(idx);

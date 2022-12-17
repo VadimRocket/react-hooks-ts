@@ -1,10 +1,10 @@
 import React from 'react'
-import './LoginForm.less';
 import { useInput } from '@src/hooks/useInput';
-import { Button } from '../../ui/button/Button';
-import { Heading } from '../../ui/Heading';
+import { Button, Heading } from '@src/components/ui';
 
-const LoginForm = () => {
+import './LoginForm.less';
+
+export const LoginForm: React.FC = () => {
 
     const username = useInput('', true);
     const password = useInput('', true);
@@ -42,4 +42,3 @@ const LoginForm = () => {
     )
 }
 
-export default LoginForm;

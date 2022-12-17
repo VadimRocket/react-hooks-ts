@@ -1,8 +1,8 @@
 import React from 'react'
 import { useFocus } from '../../hooks/useFocus';
-import { Heading } from '../ui/Heading';
+import { Heading } from '../ui';
 
-const InputFocus: React.FC = () => {
+export const InputFocus: React.FC = () => {
 
     const [inputRef, setInputFocus] = useFocus();
 
@@ -18,4 +18,3 @@ const InputFocus: React.FC = () => {
     )
 }
 
-export default InputFocus;

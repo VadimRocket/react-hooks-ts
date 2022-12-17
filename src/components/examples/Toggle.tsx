@@ -1,9 +1,8 @@
 import React from 'react'
 import { useToggle } from '@src/hooks/useToggle';
-import { Button } from '../ui/button/Button';
-import { Heading } from '../ui/Heading';
+import { Button, Heading } from '../ui';
 
-const Toggle: React.FC = () => {
+export const Toggle: React.FC = () => {
     const [value, setValue] = useToggle(false);
 
     const handleClick = (event: React.MouseEvent<HTMLButtonElement>) => {
@@ -19,4 +18,3 @@ const Toggle: React.FC = () => {
     )
 }
 
-export default Toggle;

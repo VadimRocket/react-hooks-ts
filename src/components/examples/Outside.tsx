@@ -1,10 +1,11 @@
 import React from 'react'
 import { useOutside } from '@src/hooks/useOutside'
-import { Heading } from '../ui/Heading'
-import { Button } from '../ui/button/Button'
+
+import { Heading, Button } from '../ui'
 
 
-const Outside: React.FC = () => {
+
+export const Outside: React.FC = () => {
     const { ref, isShow, setIsShow } = useOutside(false)
 
     const handleClick = () => {
@@ -23,5 +24,5 @@ const Outside: React.FC = () => {
     )
 }
 
-export default Outside;
+
 

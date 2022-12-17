@@ -26,6 +26,7 @@ export const useGeolocation = (positionOptions = options) => {
   const [error, setError] = useState<GeolocationPositionError | null>(null);
 
   useEffect(() => {
+    // eslint-disable-next-line @typescript-eslint/ban-types
     const handleSuccess = (event: { coords: SetStateAction<{}> }) => {
       setLoading(false);
       setError(null);
@@ -64,15 +65,15 @@ const Geolocation = () => {
 
     return (
         <>
-            <Heading tag="h2">useGeolocation example</Heading>
-            {loading && <Preloader />}
-            <Heading tag="p">
-                {
-                    error
-                        ? (<span>{error?.message}</span>)
-                        : (<span>latitude: {geolocationCoordinates?.latitude} &times; longitude: {geolocationCoordinates?.longitude} </span>)
-                }
-            </Heading>
+          <Heading tag="h2">useGeolocation example</Heading>
+          {loading && <Preloader />}
+          <Heading tag="p">
+            {
+              error
+                ? (<span>{error?.message}</span>)
+                : (<span>latitude: {geolocationCoordinates?.latitude} &times; longitude: {geolocationCoordinates?.longitude} </span>)
+            }
+          </Heading>
         </>
     )
 }

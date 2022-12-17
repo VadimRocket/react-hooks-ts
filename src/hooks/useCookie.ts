@@ -3,31 +3,29 @@ import { useCallback, useState } from 'react';
 
 // need lib js-cookie  See npm js-cookie
 export const useCookie = (name: string, initValue: any) => {
+  const [value, setValue] = useState(() => {
+    const cookie = Cookies.get(name);
 
-    const [value, setValue] = useState(() => {
-        const cookie = Cookies.get(name);
+    if (cookie) return cookie;
 
-        if (cookie) return cookie;
+    Cookies.set(name, initValue);
 
-        Cookies.set(name, initValue);
+    return initValue;
+  });
 
-        return initValue;
+  const updateCookie = useCallback(
+    (newValue, options) => {
+      Cookies.set(name, newValue, options);
+      setValue(newValue);
+    },
+    [name],
+  );
+  const deleteCookie = useCallback(() => {
+    Cookies.remove(name);
+    setValue(null);
+  }, [name]);
 
-    });
-
-    const updateCookie = useCallback(
-        (newValue, options) => {
-            Cookies.set(name, newValue, options);
-            setValue(newValue);
-        },
-        [name]
-    );
-    const deleteCookie = useCallback(() => {
-        Cookies.remove(name);
-        setValue(null);
-    }, [name]);
-    
-    return [value, updateCookie, deleteCookie];
+  return [value, updateCookie, deleteCookie];
 };
 
 // Usage

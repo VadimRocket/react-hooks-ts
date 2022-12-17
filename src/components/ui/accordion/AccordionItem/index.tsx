@@ -1,16 +1,20 @@
 import React, { useEffect, useRef, useState } from 'react';
-import { AccordionData } from './types';
+import { AccordionData } from '../types';
+
 import './AccordionItem.less';
 
-function AccordionItem({
-    data,
-    isOpen,
-    btnOnClick,
-}: {
+
+interface AccordionItemProps {
     data: AccordionData;
     isOpen: boolean;
     btnOnClick: () => void;
-}) {
+}
+
+export const AccordionItem: React.FC<AccordionItemProps> = ({
+    data,
+    isOpen,
+    btnOnClick,
+}) => {
     const contentRef = useRef<HTMLDivElement>(null);
     const [height, setHeight] = useState(0);
 
@@ -40,4 +44,3 @@ function AccordionItem({
     );
 }
 
-export default AccordionItem;

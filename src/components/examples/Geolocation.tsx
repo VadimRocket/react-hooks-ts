@@ -1,10 +1,8 @@
 import React from 'react'
-import { Heading } from '@src/components/ui/Heading'
 import { useGeolocation } from '@src/hooks/useGeolocation'
-import { Preloader } from '@src/components/ui/preloader/Preloader'
+import { Heading, Preloader } from '../ui';
 
-
-const Geolocation = () => {
+export const Geolocation: React.FC = () => {
     const {
         loading,
         error,
@@ -26,4 +24,3 @@ const Geolocation = () => {
     )
 }
 
-export default Geolocation
