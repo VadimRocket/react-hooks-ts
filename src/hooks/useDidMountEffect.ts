@@ -5,7 +5,6 @@ Eсть много ситуаций, когда обычный useEffect не п
 The useDidMountEffect work only when props changed.
 */
 
-
 import { useEffect, useRef } from 'react';
 
 export const useDidMountEffect = (fn: () => any, inputs: Array<any>) => {
@@ -19,7 +18,6 @@ export const useDidMountEffect = (fn: () => any, inputs: Array<any>) => {
     }
   }, inputs);
 };
-
 
 /**
  * Usage:

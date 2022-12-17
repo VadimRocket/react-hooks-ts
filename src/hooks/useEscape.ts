@@ -1,19 +1,17 @@
 import React from 'react';
 
 interface KeyboardEvent {
-    code: string;
-  }
+  code: string;
+}
 
-
-export const useEscape = (callback:() => void) => {
-
+export const useEscape = (callback: () => void) => {
   const escapeFn = React.useCallback(
     (event: KeyboardEvent) => {
-      if (event.code === "Escape") {
+      if (event.code === 'Escape') {
         callback();
       }
     },
-    [callback]
+    [callback],
   );
 
   React.useEffect(() => {
