@@ -4,12 +4,11 @@ import logo from '@assets/images/logo.png';
 import './Application.less';
 import Home from './screens/home/Home';
 
-
-type Props = {
+type ApplicationProps = {
   title: string;
 };
 
-const Application: React.FC<Props> = (props) => {
+const Application: React.FC<ApplicationProps> = ({ title }) => {
 
 
   return (
@@ -17,9 +16,9 @@ const Application: React.FC<Props> = (props) => {
       <main>
         <div className='main-heading'>
           <img src={logo} width='32' title='logo' />
-          <h1>{props.title}</h1>
+          <h1>{title}</h1>
         </div>
-        <Home/>
+        <Home />
       </main>
     </React.Fragment>
   );
