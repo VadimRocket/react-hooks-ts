@@ -1,9 +1,9 @@
 import React from 'react'
-import { useCookie } from '../../hooks/useCookie';
-import { Heading } from '../ui/Heading';
+import { useCookie } from '@src/hooks/useCookie';
 
+import { Heading } from '../ui';
 
-const Cookies: React.FC = () => {
+export const Cookies: React.FC = () => {
 
     const [value, updateCookie, deleteCookie] = useCookie("token", "")
 
@@ -17,4 +17,3 @@ const Cookies: React.FC = () => {
     )
 }
 
-export default Cookies

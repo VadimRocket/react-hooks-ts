@@ -1,16 +1,15 @@
 import React from 'react';
 import { hot } from 'react-hot-loader';
 import logo from '@assets/images/logo.png';
-import './Application.less';
-import Home from './screens/home/Home';
+import Home from '@src/screens/Home';
+
+import './App.less';
 
 type ApplicationProps = {
   title: string;
 };
 
 const Application: React.FC<ApplicationProps> = ({ title }) => {
-
-
   return (
     <React.Fragment>
       <main>

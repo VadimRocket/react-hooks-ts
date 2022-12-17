@@ -1,7 +1,6 @@
 import React from 'react';
 import { useLocalStorage } from '@src/hooks/useLocalStorage';
-import { Button } from '../ui/button/Button';
-import { Heading } from '../ui/Heading';
+import { Heading, Button } from '../ui'
 
 export interface Todo {
     title: string;
@@ -16,7 +15,7 @@ const initState: Todo[] = [
     }
 ];
 
-const LocalStorage: React.FC = () => {
+export const LocalStorage: React.FC = () => {
 
     const [todos, setTodos] = useLocalStorage('todos', initState);
     const handleClick = (event: React.MouseEvent<HTMLButtonElement>) => {
@@ -37,4 +36,3 @@ const LocalStorage: React.FC = () => {
     )
 }
 
-export default LocalStorage;

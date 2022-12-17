@@ -1,13 +1,14 @@
 import React from 'react'
 import { useEscape } from '@src/hooks/useEscape';
 import { useToggle } from '@src/hooks/useToggle';
-import { Heading } from '../ui/Heading';
+import { Heading } from '../ui';
 
-const Escape: React.FC = () => {
+export const Escape: React.FC = () => {
 
     const [isToggle, setIsToggle] = useToggle(false);
 
-    const [escapeFn] = useEscape(setIsToggle);
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
+    const [_] = useEscape(setIsToggle);
 
 
     return (
@@ -19,5 +20,3 @@ const Escape: React.FC = () => {
         </>
     )
 }
-
-export default Escape

@@ -1,8 +1,8 @@
 import React from 'react';
 import { useWindowSize } from '@src/hooks/useWindowSize';
-import { Heading } from '../ui/Heading';
+import { Heading } from '../ui';
 
-const WindowSize: React.FC = () => {
+export const WindowSize: React.FC = () => {
     const { width, height } = useWindowSize();
 
     return (
@@ -13,5 +13,3 @@ const WindowSize: React.FC = () => {
 
     )
 }
-
-export default WindowSize;

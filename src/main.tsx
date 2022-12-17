@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Application from './components/Application';
+import Application from './components/App';
+
 import { inDev } from './utils/helpers';
 
 // Application to Render

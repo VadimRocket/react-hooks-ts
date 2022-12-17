@@ -1,11 +1,9 @@
 import React from 'react'
 import './ThemeBgSwitcher.less';
 import { useTheme } from '@src/hooks/useTheme';
-import { Button } from '../../ui/button/Button'
-import { Heading } from '../../ui/Heading';
+import { Button, Heading } from '@src/components/ui';
 
-
-const ThemeBgSwitcher: React.FC = () => {
+export const ThemeBgSwitcher: React.FC = () => {
     const { theme, toggleTheme } = useTheme();
     return (
         <>
@@ -17,4 +15,3 @@ const ThemeBgSwitcher: React.FC = () => {
     )
 }
 
-export default ThemeBgSwitcher;

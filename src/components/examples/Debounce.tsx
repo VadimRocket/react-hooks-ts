@@ -1,8 +1,9 @@
 import React from 'react'
 import { useDebounce } from "../../hooks/useDebounce";
-import { Heading } from '../ui/Heading';
+import { Heading } from '../ui';
 
-const Debounce: React.FC = () => {
+
+export const Debounce: React.FC = () => {
 
     const [value, setValue] = React.useState<string>("");
     const delay = 1000;
@@ -23,6 +24,5 @@ const Debounce: React.FC = () => {
     );
 }
 
-export default Debounce
 
 

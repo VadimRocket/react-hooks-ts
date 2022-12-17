@@ -1,9 +1,8 @@
 import React, { useState } from 'react'
 import { useDidMountEffect } from "../../hooks/useDidMountEffect";
-import { Button } from '../ui/button/Button';
-import { Heading } from '../ui/Heading';
+import { Heading, Button } from '../ui';
 
-const DidMountEffect: React.FC = () => {
+export const DidMountEffect: React.FC = () => {
     const [value, setValue] = useState<number>(0);
 
     useDidMountEffect(() => {
@@ -24,4 +23,3 @@ const DidMountEffect: React.FC = () => {
     )
 }
 
-export default DidMountEffect;
