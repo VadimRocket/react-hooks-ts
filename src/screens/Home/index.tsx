@@ -1,6 +1,7 @@
 import React from 'react'
 import { Layout } from '@src/layout/Layout'
-import Accordion from '@src/components/ui/Accordion'
+
+import { Accordion } from '@src/components/ui'
 
 import {
   Cookies, Debounce, DidMountEffect, Escape, FetchPost, Geolocation, InputFocus,
