@@ -9,8 +9,7 @@ const ThemeBgSwitcher: React.FC = () => {
     const { theme, toggleTheme } = useTheme();
     return (
         <>
-            <Heading level='h2'>useTheme example</Heading>
-            <Heading level='p'></Heading>
+            <Heading tag='h2'>useTheme example</Heading>
             <Button onClick={toggleTheme}>{theme}</Button>
             <div className={`theme_bg ${theme}`}>Theme:  {theme}</div>
         </>

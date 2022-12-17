@@ -16,7 +16,7 @@ const LoginForm = () => {
     }
     return (
         <>
-            <Heading level='h2'>useInput example</Heading>
+            <Heading tag='h2'>useInput example</Heading>
             <form className='login__form' onSubmit={handleSubmit}>
                 <div className="form__inputs">
                     <label className='login__label' htmlFor='usernameInput'>

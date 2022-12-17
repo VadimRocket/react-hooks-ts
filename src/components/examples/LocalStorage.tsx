@@ -16,7 +16,7 @@ const initState: Todo[] = [
     }
 ];
 
-const LocalStorage:React.FC = () => {
+const LocalStorage: React.FC = () => {
 
     const [todos, setTodos] = useLocalStorage('todos', initState);
     const handleClick = (event: React.MouseEvent<HTMLButtonElement>) => {
@@ -29,8 +29,8 @@ const LocalStorage:React.FC = () => {
     }
     return (
         <>
-            <Heading level='h2'>useLocalStorage example</Heading>
-            <Heading level='p'>see Local Storage (F12 / Application / Local Storage)</Heading>
+            <Heading tag='h2'>useLocalStorage example</Heading>
+            <Heading tag='p'>see Local Storage (F12 / Application / Local Storage)</Heading>
             <Button onClick={handleClick}>Add to LocalStorage</Button>
         </>
 
